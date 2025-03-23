@@ -1,0 +1,46 @@
+.content_block {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+
+.navbar {
+    background-color: rgba(255, 255, 255, 1);
+    width: 353px;
+    height: 100vh;
+    opacity: 10;
+    padding: 56px;
+    position: relative;
+}
+
+.close_icon {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.nav_list li {
+    font-size: 32px;
+}
+
+@media only screen and (max-width: 757px) {
+    .navbar {
+        padding: 56px;
+    }
+}

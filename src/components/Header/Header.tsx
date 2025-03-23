@@ -1,6 +1,17 @@
 import { HiOutlineMenu } from "react-icons/hi";
 import styles from './Header.module.css'
+import NavbarResponsive from "../NavbarResponsive/NavbarResponsive";
+import { useState } from "react";
 const Header = () => {
+
+  const [toggleNavbar, setToggleNavbar] = useState(false)
+
+  const handleToggleNavbar = () => {
+    setToggleNavbar(!toggleNavbar)
+  }
+
+
+
   return (
     <header className={styles.header}>
 
@@ -12,11 +23,16 @@ const Header = () => {
       </div>
 
       <nav className={styles.nav}>
-        <HiOutlineMenu className={styles.menu_icon} />
+        {
+          toggleNavbar && (
+            <NavbarResponsive handleToggleNavbar={handleToggleNavbar} />
+          )
+        }
+        <HiOutlineMenu className={styles.menu_icon} onClick={handleToggleNavbar} />
         <ul className={styles.nav_list}>
-          <li>Quienes somos?</li>
+          <li>Quiénes somos?</li>
           <li>Servicios</li>
-          <li>Contactanos</li>
+          <li>Contáctanos</li>
         </ul>
       </nav>
 
