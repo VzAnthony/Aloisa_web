@@ -1,0 +1,61 @@
+.footer {
+    color: white;
+    background-color: black;
+    padding: 32px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.company_name {
+    color: white;
+    font-size: 32px;
+    font-family: "Playfair Display", serif;
+}
+
+.contact_title {
+    font-weight: bold;
+}
+
+.contact_list li {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact_list_phone {
+    display: flex;
+    align-items: center;
+    gap: 21px !important;
+}
+
+@media only screen and (max-width: 1024px) {
+    .footer {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .contact_container {
+        text-align: center;
+    }
+
+    .contact_title {
+        text-align: center;
+    }
+
+    .contact_list li {
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .company_name {
+        font-size: 22px;
+        text-align: center  ;
+    }
+}
+

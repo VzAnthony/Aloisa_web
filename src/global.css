@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Normalización de la tipografía y el comportamiento de los elementos */
+html {
+  height: 100%;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%; 
+  -moz-text-size-adjust: 100%; 
+}
+
+body {
+  height: 100%;
+  font-family:  "Nunito", sans-serif; /* TODO CAMBIAR POR LAS TIPOGRAFIAS */
+  line-height: 1.6;
+  background-color: #fdf9f9;
+  color: #333;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Estilo para el contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Regla para listas */
+ul, ol {
+  list-style: none;
+}
+
+
+.page_wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 100% de la altura de la ventana */
+}
+
+.content {
+  flex-grow: 1; /* Toma todo el espacio disponible */
+  padding: 20px;
+}
