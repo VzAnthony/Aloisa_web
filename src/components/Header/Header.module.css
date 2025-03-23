@@ -53,11 +53,7 @@
     }
 }
 
-@media only screen and (max-width: 425px) {
-    .logo {
-        display: none
-    }
-}
+
 
 @media only screen and (max-width: 1440px) {
     .nav_list {
@@ -89,3 +85,13 @@
     }
 }
 
+
+@media only screen and (max-width: 425px) {
+    .header {
+        padding: 16px;
+    }
+    .logo {
+        display: none
+    }
+
+}
