@@ -26,9 +26,15 @@ const NavbarResponsive = ({
         >
             <CgClose className={styles.close_icon} onClick={handleToggleNavbar} />
             <ul className={styles.nav_list}>
-                <li>Quiénes somos?</li>
-                <li>Servicios</li>
-                <li>Contáctanos</li>
+                <li>
+                    <a href="#about">Quiénes somos?</a>
+                </li>
+                <li>
+                    <a href="#services">Servicios</a>
+                </li>
+                <li>
+                    <a href="#contact">Contacto</a>
+                </li>
             </ul>
         </motion.div>
     </div>
