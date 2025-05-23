@@ -11,6 +11,13 @@ const Header = () => {
     setToggleNavbar(!toggleNavbar)
   }
 
+  console.log(toggleNavbar)
+
+  const handleCloseNavbar = () => {
+    console.log('cerrar')
+    setToggleNavbar(false)
+  }
+
   return (
     <header className={styles.header}>
       <div className={styles.header_container}>
@@ -25,7 +32,7 @@ const Header = () => {
         <nav className={styles.nav}>
           {
             toggleNavbar && (
-              <NavbarResponsive handleToggleNavbar={handleToggleNavbar} />
+              <NavbarResponsive handleToggleNavbar={handleToggleNavbar} handleCloseNavbar={handleCloseNavbar} />
             )
           }
           <HiOutlineMenu className={styles.menu_icon} onClick={handleToggleNavbar} />

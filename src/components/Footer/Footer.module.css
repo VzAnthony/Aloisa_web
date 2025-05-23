@@ -13,17 +13,23 @@
     padding: 32px 0px;
 }
 
+.logo_container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 .logo {
-    width: 250px;   /* Tamaño visible deseado */
+    width: 250px;  
     height: 80px;
     overflow: hidden;
-
+    
     & > img {
-        width: 100%;
-    height: 100%;
-    object-fit: cover;        /* Rellena el contenedor cortando lo que sobra */
-    object-position: center;  /* Centra la imagen en el contenedor */
-    filter: invert(1) brightness(2);
+        width: 46%;
+        height: 100%;
+        object-fit: cover; 
+        object-position: center;
+        filter: invert(1) brightness(2);
     }
 }
 
@@ -76,6 +82,11 @@
     .footer_container {
         flex-direction: column-reverse;
         gap: 32px;
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: center;
     }
 }
 

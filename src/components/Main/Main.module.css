@@ -17,8 +17,9 @@
 .company_container {
     display: flex;
     gap: 16px;
-    justify-content: end;
-    align-items: end;
+    /* justify-content: end; */
+    /* align-items: end; */
+    justify-content: center;
 }
 
 .letter_company, .company_name, .slogan {

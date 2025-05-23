@@ -4,10 +4,12 @@ import { motion } from "motion/react"
 
 interface NavbarResponsiveProps {
     handleToggleNavbar: () => void
+    handleCloseNavbar: () => void
 }
 
 const NavbarResponsive = ({
     handleToggleNavbar,
+    handleCloseNavbar
 }: NavbarResponsiveProps) => {
   return (
     <div
@@ -27,13 +29,13 @@ const NavbarResponsive = ({
             <CgClose className={styles.close_icon} onClick={handleToggleNavbar} />
             <ul className={styles.nav_list}>
                 <li>
-                    <a href="#about">Quiénes somos?</a>
+                    <a href="#about" onClick={handleCloseNavbar} >Quiénes somos?</a>
                 </li>
                 <li>
-                    <a href="#services">Servicios</a>
+                    <a href="#services" onClick={handleCloseNavbar}>Servicios</a>
                 </li>
                 <li>
-                    <a href="#contact">Contacto</a>
+                    <a href="#contact" onClick={handleCloseNavbar}>Contacto</a>
                 </li>
             </ul>
         </motion.div>

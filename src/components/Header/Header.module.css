@@ -20,15 +20,15 @@
 }
 
 .logo {
-    width: 250px;   /* Tamaño visible deseado */
+    width: 250px;   
     height: 80px;
     overflow: hidden;
 
     & > img {
-        width: 100%;
+        width: 46%;
         height: 100%;
-        object-fit: cover;        /* Rellena el contenedor cortando lo que sobra */
-        object-position: center;  /* Centra la imagen en el contenedor */
+        object-fit: cover;       
+        object-position: center;  
     }
 }
 
@@ -96,7 +96,7 @@
 
 @media only screen and (max-width: 768px) {
     .header_container {
-        padding: 0;
+        padding: 8px 0;
     }
 }
 @media only screen and (max-width: 425px) {

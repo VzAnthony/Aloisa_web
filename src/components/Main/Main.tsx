@@ -6,7 +6,7 @@ const LandingPage = () => {
       <div className={styles.logo_container}>
         <div className={styles.logo}> 
           <div className={styles.company_container}>
-            <span className={styles.company_name}>CORPORACIÓN</span> <span className={styles.letter_company}>ASL</span>
+            <span className={styles.letter_company}>MARLI</span>
           </div>
           <div className={styles.slogan}>
             <hr />
@@ -36,6 +36,7 @@ const LandingPage = () => {
       <ul className={styles.services}>
         <li>Limpieza de terminación de obra</li>
         <li>Limpieza de residencias</li>
+        <li>Limpieza de oficinas</li>
         <li>Limpieza general</li>
       </ul>
 
