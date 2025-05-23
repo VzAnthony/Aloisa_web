@@ -18,7 +18,7 @@ const LandingPage = () => {
 <div className={styles.section} style={{marginTop: '100px'}}>
       <h3 className={styles.subtitle}>¿Quiénes somos?</h3>
       <p className={styles.description}>
-        Somos Aloisa Servicios de Limpieza, una empresa distinguida por ofrecer un servicio de limpieza impecable, discreto y minucioso,
+        Somos Marli, una empresa distinguida por ofrecer un servicio de limpieza impecable, discreto y minucioso,
         orientado a residencias y espacios recientemente reacondicionados.
       </p>
       <p className={styles.description} id='services'>
